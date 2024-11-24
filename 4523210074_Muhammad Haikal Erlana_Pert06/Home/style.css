@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    word-spacing: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 60px;
+}
+
+.italic-text {
+    font-style: italic
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border: 1px solid antiquewhite;
+    color: black;
+    background-color: aliceblue;
+}
+
+.auth-links a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: white;       
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;    
+    margin-right: 50px;
+    text-align: center;
+    border: 1px solid antiquewhite;
+    background-color: rgb(252, 218, 224);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.auth-links a:hover {
+   background-color: antiquewhite;
+}
+
+.judul {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px; 
+    border: 1px solid antiquewhite; 
+    background-color: rgb(252, 218, 224); 
+    font-size: 25px;
+}
+
+  details {
+    position: relative;
+    display: inline-block;
+  }
+
+  details[open] summary {
+    text-align: left;     
+  }
+  
+  details[open] p{
+    margin-top: 5px;         
+    padding-top: 0;
+  }
+
+.judul .beton {
+    margin-right: 17px;
+    display: flex;
+}
+
+.judul .kewer {
+    margin-left: 25px;
+    display: flex;
+    color: grey; 
+    letter-spacing: 2px; 
+    font-size: 25px;
+    text-decoration: none; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.judul h2 {
+    color: grey; 
+    margin-right: 955px;
+    letter-spacing: 2px; 
+    font-size: 25px; 
+    text-decoration: none; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Container-1 */
+.container-1 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: -143px;
+    min-height: 63vh;
+    gap: 8px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Container-2 */
+.container-2 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    min-height: 55vh;
+    gap: 8px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    margin-top: -293px;
+}
+/* End Container-2 */
+
+.card {
+    position: relative;
+    width: 290px;
+    height: 290px;
+    border: 1px solid antiquewhite;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgb(252, 218, 224) 0px 5px 10px;
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-image {
+    filter: brightness(50%);
+    transform: scale(1.1);
+}
+
+.card-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+}
+
+.card-title {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 28px;
+    color: antiquewhite;
+    font-weight: bold;
+    margin: auto;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease;
+    
+}
+
+.card:hover .card-title {
+    transform: translateY(0);
+}
+
+.card-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    transform: translateY(20px);
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-text {
+    transform: translateY(0);
+}
+
+.read-more-btn {
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(50px);
+    background-color: rgb(176, 176, 176);
+    box-shadow: 0 8px 15px rgba(217, 210, 210, 0.3);
+    transition: transform 0.5s ease 0.1s, background-color 0.3s ease, opacity 0.3s ease 0.2s;
+}
+
+.card:hover .read-more-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.read-more-btn:hover {
+    background-color: #737070;
+    box-shadow: 0 12px 20px rgba(167, 164, 164, 0.5);
+}
+/* End Container */
+
+.footer {
+    margin-top: -60px;
+    display: flex;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-box {
+    flex: 1;
+}
+
+.center-box {
+    height: 145px;
+    background-color: #d6e4f2;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+
+.center-box .copy {
+    color: rgb(174, 173, 173);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 66px;
+}
+
+.side-box{
+    background-color: #5a8fc2; 
+}
+
+@media screen and (max-width: 1200px) {
+    .container-1 {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .container-2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .container-1 {
+        display: grid;
+        margin-top: -1px;
+        padding: 10px;
+    }
+
+    .judul .beton {
+        display: grid;
+    }
+
+    .judul .kewer {
+        display: grid;
+    }
+
+    .container-2 {
+        display: grid;
+        padding-top: 280px;
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .judul .kewer {
+        display: grid;
+    }
+}
